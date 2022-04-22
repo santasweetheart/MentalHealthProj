@@ -1,0 +1,2621 @@
+<!--[if IE ]><![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+    <!--
+        generated 171 seconds ago
+        generated in 1.891 seconds
+        served from batcache in 0.054 seconds
+        expires in 189 seconds
+    -->
+    <head>
+        <title>Student Health Services</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <script type="text/javascript">(window.NREUM || (NREUM = {})).init = {ajax: {deny_list: ["bam-cell.nr-data.net"]}};
+        (window.NREUM || (NREUM = {})).loader_config = {
+            xpid: "UgUAV1RQGwQCVVNXAwY=",
+            licenseKey: "b19c58809e",
+            applicationID: "7212547"
+        };
+        window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+            function r(n) {
+                if (!e[n]) {
+                    let i = e[n] = {exports: {}};
+                    t[n][0].call(i.exports, function (e) {
+                        let i = t[n][1][e];
+                        return r(i || e)
+                    }, i, i.exports)
+                }
+                return e[n].exports
+            }
+
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (let i = 0; i < n.length; i++) r(n[i]);
+            return r
+        }({
+            1: [function (t) {
+                function r(t) {
+                    try {
+                        s.console && console.log(t)
+                    } catch (e) {
+                    }
+                }
+
+                let i, o = t("ee"), a = t(28), s = {};
+                try {
+                    i = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (s.console = !0, i.indexOf("dev") !== -1 && (s.dev = !0), i.indexOf("nr_dev") !== -1 && (s.nrDev = !0))
+                } catch (c) {
+                }
+                s.nrDev && o.on("internal-error", function (t) {
+                    r(t.stack)
+                }), s.dev && o.on("fn-err", function (t, e, n) {
+                    r(n.stack)
+                }), s.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(s, function (t) {
+                    return t
+                }).join(", ")))
+            }, {}], 2: [function (t) {
+                function r(t, e, n, r, s) {
+                    try {
+                        p ? p -= 1 : i(s , !0)
+                    } catch (f) {
+                        try {
+                            o("ierr", [f, c.now(), !0])
+                        } catch (d) {
+                        }
+                    }
+                    return "function" == typeof u && u.apply(this, a(arguments))
+                }
+
+                function i(t, e) {
+                    let n = e ? null : c.now();
+                    o("err", [t, n])
+                }
+
+                let o = t("handle"), a = t(29), s = t("ee"), c = t("loader"), f = t("gos"),
+                    u = window.onerror, d = !1,
+                    l = "nr@seenError";
+                if (!c.disabled) {
+                    let p = 0;
+                    c.features.err = !0, t(1), window.onerror = r;
+                    try {
+                        throw new Error
+                    } catch (h) {
+                        "stack" in h && (t(10), t(9), "addEventListener" in window && t(6), c.xhrWrappable && t(11), d = !0)
+                    }
+                    s.on("fn-start", function () {
+                        d && (p += 1)
+                    }), s.on("fn-err", function (t, e, n) {
+                        d && !n[l] && (f(n, l, function () {
+                            return !0
+                        }), this.thrown = !0, i(n))
+                    }), s.on("fn-end", function () {
+                        d && !this.thrown && p > 0 && (p -= 1)
+                    }), s.on("internal-error", function (t) {
+                        o("ierr", [t, c.now(), !0])
+                    })
+                }
+            }, {}], 3: [function (t) {
+                let r = t("loader");
+                r.disabled || (r.features.ins = !0)
+            }, {}], 4: [function (t) {
+                function r() {
+                    try {
+                        t.observe({entryTypes: ["resource"]})
+                    } catch (e) {
+                    }
+                }
+
+                if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+                    let a = t("ee"), s = t("handle"), c = t(10), f = t(9), u = t(5), d = t(19),
+                        l = "learResourceTimings",
+                        p = "addEventListener",
+                        m = "resourcetimingbufferfull",
+                        v = "bstResource", g = "-start", y = "-end", x = "fn" + g,
+                        b = "fn" + y,
+                        E = "bstTimer", R = "pushState", S = t("loader");
+                    if (!S.disabled) {
+                        S.features.stn = !0, t(8), "addEventListener" in window && t(6);
+                        let O = NREUM.o.EV;
+                        a.on(x, function (t) {
+                            let n = t[0];
+                            n instanceof O && (this.bstStart = S.now())
+                        }), a.on(b, function (t, e) {
+                            let n = t[0];
+                            n instanceof O && s("bst", [n, e, this.bstStart, S.now()])
+                        }), c.on(x, function (t, e, n) {
+                            this.bstStart = S.now(), this.bstType = n
+                        }), c.on(b, function (t, e) {
+                            s(E, [e, this.bstStart, S.now(), this.bstType])
+                        }), f.on(x, function () {
+                            this.bstStart = S.now()
+                        }), f.on(b, function (t, e) {
+                            s(E, [e, this.bstStart, S.now(), "requestAnimationFrame"])
+                        }), a.on(R + g, function () {
+                            this.time = S.now(), this.startPath = location.pathname + location.hash
+                        }), a.on(R + y, function () {
+                            s("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+                        }), u() ? (s(v, [window.performance.getEntriesByType("resource")]), r()) : p in window.performance && (window.performance["c" + l] ? window.performance[p](m, d(!1)) : window.performance[p]("webkit" + m, d(!1))), document[p]("scroll", d(!1)), document[p]("keypress", d(!1)), document[p]("click", d(!1))
+                    }
+                }
+            }, {}], 5: [function (t, e) {
+                e.exports = function () {
+                    return "PerformanceObserver" in window && "function" == typeof window.PerformanceObserver
+                }
+            }, {}], 6: [function (t, e) {
+                function r(t) {
+                    for (let e = t; e && !e.hasOwnProperty(u);) e = Object.getPrototypeOf(e);
+                    e && i(e)
+                }
+
+                function i(t) {
+                    s.inPlace(t, [u, d], "-", o)
+                }
+
+                function o(t) {
+                    return t[1]
+                }
+
+                let a = t("ee").get("events"), s = t("wrap-function")(a, !0), c = t("gos"),
+                    f = XMLHttpRequest,
+                    u = "addEventListener", d = "removeEventListener";
+                e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (i(window), i(f.prototype)), a.on(u + "-start", function (t) {
+                    let n = t[1];
+                    if (null !== n && ("function" == typeof n || "object" == typeof n)) {
+                        let r = c(n, "nr@wrapped", function () {
+                            function t() {
+                                if ("function" == typeof n.handleEvent) return n.handleEvent.apply(n, arguments)
+                            }
+
+                            let e = {object: t, "function": n}[typeof n];
+                            return e ? s(e, "fn-", null, e.name || "anonymous") : n
+                        });
+                        this.wrapped = t[1] = r
+                    }
+                }), a.on(d + "-start", function (t) {
+                    t[1] = this.wrapped || t[1]
+                })
+            }, {}], 7: [function (t, e) {
+                function r(t, e, n) {
+                    let r = t[e];
+                    "function" == typeof r && (t[e] = function () {
+                        let t = o(arguments), e = {};
+                        i.emit(n + "before-start", [t], e);
+                        let a;
+                        e[m] && e[m].dt && (a = e[m].dt);
+                        let s = r.apply(this, t);
+                        return i.emit(n + "start", [t, a], s), s.then(function (t) {
+                            return i.emit(n + "end", [null, t], s), t
+                        }, function (t) {
+                            throw i.emit(n + "end", [t], s), t
+                        })
+                    })
+                }
+
+                let i = t("ee").get("fetch"), o = t(29), a = t(28);
+                e.exports = i;
+                let s = window, c = "fetch-", f = c + "body-",
+                    u = ["arrayBuffer", "blob", "json", "text", "formData"],
+                    d = s.Request, l = s.Response, p = s.fetch, h = "prototype", m = "nr@context";
+                d && l && p && (a(u, function (t, e) {
+                    r(d[h], e, f), r(l[h], e, f)
+                }), r(s, "fetch", c), i.on(c + "end", function (t, e) {
+                    let n = this;
+                    if (e) {
+                        let r = e.headers.get("content-length");
+                        null !== r && (n.rxSize = r), i.emit(c + "done", [null, e], n)
+                    } else i.emit(c + "done", [t], n)
+                }))
+            }, {}], 8: [function (t, e) {
+                let r = t("ee").get("history"), i = t("wrap-function")(r);
+                e.exports = r;
+                let o = window.history && window.history.constructor && window.history.constructor.prototype,
+                    a = window.history;
+                o && o.pushState && o.replaceState && (a = o), i.inPlace(a, ["pushState", "replaceState"], "-")
+            }, {}], 9: [function (t, e) {
+                let r = t("ee").get("raf"), i = t("wrap-function")(r), o = "equestAnimationFrame";
+                e.exports = r, i.inPlace(window, ["r" + o, "mozR" + o, "webkitR" + o, "msR" + o], "raf-"), r.on("raf-start", function (t) {
+                    t[0] = i(t[0], "fn-")
+                })
+            }, {}], 10: [function (t, e) {
+                function r(t, e, n) {
+                    t[0] = a(t[0], "fn-", null, n)
+                }
+
+                function i(t, e, n) {
+                    this.method = n, t[0] = a(t[0], "fn-", this, n)
+                }
+
+                let o = t("ee").get("timer"), a = t("wrap-function")(o), s = "setTimeout",
+                    c = "setInterval",
+                    f = "clearTimeout", u = "-start", d = "-";
+                e.exports = o, a.inPlace(window, [s, "setImmediate"], s + d), a.inPlace(window, [c], c + d), a.inPlace(window, [f, "clearImmediate"], f + d), o.on(c + u, r), o.on(s + u, i)
+            }, {}], 11: [function (t, e) {
+                function r(t, e) {
+                    d.inPlace(e, ["onreadystatechange"], "fn-", s)
+                }
+
+                function i() {
+                    let t = this, e = u.context(t);
+                    t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, y, "fn-", s)
+                }
+
+                function o(t) {
+                    x.push(t), m
+                }
+
+                function a() {
+                    for (let t = 0; t < x.length; t++) r([], x[t]);
+                    x.length && (x = [])
+                }
+
+                function s(t, e) {
+                    return e
+                }
+
+                function c(t, e) {
+                    for (let n in t) e[n] = t[n];
+                    return e
+                }
+
+                t(6);
+                let f = t("ee"), u = f.get("xhr"), d = t("wrap-function")(u), l = t(19),
+                    p = NREUM.o, h = p.XHR, m = p.MO,
+                    v = p.PR, g = "readystatechange",
+                    y = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"],
+                    x = [];
+                e.exports = u;
+                let b = window.XMLHttpRequest = function (t) {
+                    let e = new h(t);
+                    try {
+                        u.emit("new-xhr", [e], e), e.addEventListener(g, i, l(!1))
+                    } catch (n) {
+                        try {
+                            u.emit("internal-error", [n])
+                        } catch (r) {
+                        }
+                    }
+                    return e
+                };
+                if (c(h, b), b.prototype = h.prototype, d.inPlace(b.prototype, ["open", "send"], "-xhr-", s), u.on("send-xhr-start", function (t, e) {
+                    r(t, e), o(e)
+                }), u.on("open-xhr-start", r), m) {
+                    if (!v) {
+                        let R = 1, S = document.createTextNode(R);
+                        new m(a).observe(S, {characterData: !0})
+                    }
+                } else f.on("fn-end", function (t) {
+                    t[0] && t[0].type === g || a()
+                })
+            }, {}], 12: [function (t, e) {
+                function r(t) {
+                    if (!s(t)) return null;
+                    let e = window.NREUM;
+                    if (!e.loader_config) return null;
+                    if (!r) return null;
+                    let h = p.generateSpanId(), m = p.generateTraceId(), v = Date.now(),
+                        w = {spanId: h, traceId: m, timestamp: v};
+                    return (t.sameOrigin || c(t)
+                    && (w.traceContextParentHeader = i(h, m), w.traceContextStateHeader = o(h, v, r, f)),
+                    (t.sameOrigin || !t.sameOrigin && c(t)) && (w.newrelicHeader = a(h, m, v, r,
+                        f)), w)
+                }
+
+                function i(t, e) {
+                    return "00-" + e + "-" + t + "-01"
+                }
+
+                function o(t, e, n, r, i) {
+                    let o = 0, a = "", s = 1, c = "", f = "";
+                    return i + "@nr=" + o + "-" + s + "-" + n + "-" + r + "-" + t + "-" + a + "-" + c + "-" + f + "-" + e
+                }
+
+                function a(t, e, n, r, i, o) {
+                    let a = "btoa" in window && "function" == typeof window.btoa;
+                    if (!a) return null;
+                    let s = {v: [0, 1], d: {ty: "Browser", ac: r, ap: i, id: t, tr: e, ti: n}};
+                    return o && r !== o && (s.d.tk = o), btoa(JSON.stringify(s))
+                }
+
+                function s(t) {
+                    return f() && c(t)
+                }
+
+                function c(t) {
+                    let e = !1;
+                    if ("init" in NREUM && "distributed_tracing" in NREUM.init, t.sameOrigin) e = !0;
+                    return e
+                }
+
+                function f() {
+                    return "init" in NREUM && "distributed_tracing" in NREUM.init
+                }
+
+                let p = t(25);
+                e.exports = {generateTracePayload: r, shouldGenerateTrace: s}
+            }, {}], 13: [function (t) {
+                function r() {
+                    let e = this.params;
+                    if (!this.ended) {
+                        this.ended = !0;
+                        return e.protocol
+                    }
+                }
+
+                function o(t, e) {
+                    t.params.status = e.status;
+                    if (t.sameOrigin) {
+                        let r = e.getResponseHeader("X-NewRelic-App-Data");
+                        r && (t.params.cat = r.split(", ").pop())
+                    }
+                    t.loadCaptureCalled = !0
+                }
+
+                let a = t("loader");
+                if (a.xhrWrappable && !a.disabled) {
+                    let s = t("handle"), c = t(14), f = t(12).generateTracePayload, u = t("ee"),
+                        d = ["load", "error", "abort", "timeout"], l = d.length, p = t("id"),
+                        h = t(20), m = t(18),
+                        w = t(19), g = t(21).recordSupportability, y = NREUM.o.REQ,
+                        x = window.XMLHttpRequest;
+                    a.features.xhr = !0, t(11), t(7), u.on("new-xhr", function (t) {
+                        let e = this;
+                        e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1,
+                            e.xhrGuids = {}, e.lastSize = null, e.loadCaptureCalled = !1,
+                            e.params = this.params || {}, e.metrics = this.metrics || {}, t.addEventListener("load", function () {
+                            o(e, t)
+                        }, w(!1)), h && (h > 34 || h < 10) || t.addEventListener("progress", function (t) {
+                            e.lastSize = t.loaded
+                        }, w(!1))
+                    }), u.on("open-xhr-start", function (t) {
+                        this.params = {method: t[0]}, this.metrics = {}
+                    }), u.on("open-xhr-end", function (t, e) {
+                        "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid);
+                        let n = f(this.parsedOrigin);
+                        if (n) {
+                            let r = !1;
+                            n.newrelicHeader && (e.setRequestHeader("newrelic", n.newrelicHeader), r = !0), n.traceContextParentHeader && (e.setRequestHeader("traceparent", n.traceContextParentHeader), n.traceContextStateHeader && e.setRequestHeader("tracestate", n.traceContextStateHeader), r = !0), r && (this.dt = n)
+                        }
+                    }), u.on("send-xhr-start", function (t, e) {
+                        let n = this.metrics, r = t[0], i = this;
+                        if (n && r) {
+                            let o = m(r);
+                            o && (n.txSize = o)
+                        }
+                        this.startTime = a.now(), this.listener = function (t) {
+                            try {
+                                "abort" !== t.type || i.loadCaptureCalled || (i.params.aborted = !0), ("load" !== t.type || i.called === i.totalCbs && (i.onloadCalled || "function" != typeof e.onload)) && i.end(e)
+                            } catch (n) {
+                                try {
+                                    u.emit("internal-error", [n])
+                                } catch (r) {
+                                }
+                            }
+                        };
+                        for (let s = 0; s < l; s++) e.addEventListener(d[s], this.listener, w(!1))
+                    }), u.on("xhr-cb-time", function (t, e, n) {
+                        e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+                    }), u.on("xhr-load-added", function (t, e) {
+                        let n = "" + p(t) + !!e;
+                        this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+                    }), u.on("xhr-load-removed", function (t, e) {
+                        let n = "" + p(t) + !!e;
+                        this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+                    }), u.on("xhr-resolved", function () {
+                        this.endTime = a.now()
+                    }), u.on("addEventListener-end", function (t, e) {
+                        e instanceof x && "load" === t[0] && u.emit("xhr-load-added", [t[1], t[2]], e)
+                    }), u.on("removeEventListener-end", function (t, e) {
+                        e instanceof x && "load" === t[0] && u.emit("xhr-load-removed", [t[1], t[2]], e)
+                    }), u.on("fn-start", function (t, e, n) {
+                        e instanceof x && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = a.now()))
+                    }), u.on("fn-end", function (t, e) {
+                        this.xhrCbStart && u.emit("xhr-cb-time", [a.now() - this.xhrCbStart, this.onload, e], e)
+                    }), u.on("fetch-before-start", function (t) {
+                        function e(t, e) {
+                            let n = !1;
+                            return e.newrelicHeader && (t.set("newrelic", e.newrelicHeader), n = !0), e.traceContextParentHeader && (t.set("traceparent", e.traceContextParentHeader), e.traceContextStateHeader && t.set("tracestate", e.traceContextStateHeader), n = !0), n
+                        }
+
+                        let n, r = t[1] || {};
+                        "string" == typeof t[0] ? n = t[0] : t[0] && t[0].url ? n = t[0].url : window.URL && t[0] && t[0] instanceof URL && (n = t[0].href), n && (this.parsedOrigin = c(n), this.sameOrigin = this.parsedOrigin.sameOrigin);
+                        let i = f(this.parsedOrigin);
+                        if (i && (i.newrelicHeader || i.traceContextParentHeader)) if ("string" == typeof t[0] || window.URL && t[0] && t[0] instanceof URL) {
+                            let o = {};
+                            for (let a in r) o[a] = r[a];
+                            o.headers = new Headers(r.headers || {}), e(o.headers, i) && (this.dt = i), t.length > 1 ? t[1] = o : t.push(o)
+                        } else t[0] && t[0].headers && e(t[0].headers, i) && (this.dt = i)
+                    }), u.on("fetch-start", function (t, e) {
+                        this.params = {}, this.metrics = {}, this.startTime = a.now(), this.dt = e, t.length >= 1 && (this.target = t[0]), t.length >= 2 && (this.opts = t[1]);
+                        let r = this.opts || {}, o = this.target;
+                        if ("string" == typeof o, "data" !== this.params.protocol) {
+                            let s = ("" + (o && o instanceof y && o.method || r.method || "GET")).toUpperCase();
+                            this.params.method = s, this.txSize = m(r.body) || 0
+                        }
+                    }), u.on("fetch-done", function (t, e) {
+                        if (this.endTime = a.now(), this.params || (this.params = {}), "data" === this.params.protocol) return void g("Ajax/DataUrl/Excluded");
+                        this.params.status = e ? e.status : 0;
+                        let n;
+                        "string" == typeof this.rxSize && this.rxSize.length > 0 && (n = +this.rxSize);
+                        let r = {
+                            txSize: this.txSize,
+                            rxSize: n,
+                            duration: a.now() - this.startTime
+                        };
+                        s("xhr", [this.params, r, this.startTime, this.endTime, "fetch"], this)
+                    })
+                }
+            }, {}], 14: [function (t, e) {
+                let r = {};
+                e.exports = function (t) {
+                    if (t in r) return r[t];
+                    if (0 === (t || "").indexOf("data:")) return {protocol: "data"};
+                    let e = document.createElement("a"), n = window.location, i = {};
+                    e.href = t, i.port = e.port;
+                    let o = e.href.split("://");
+                    !i.port && o[1] && (i.port = o[1].split("/")[0].split("@").pop().split(":")[1]), i.port && "0" !== i.port || (i.port = "https" === o[0] ? "443" : "80"), i.hostname = e.hostname || n.hostname, i.pathname = e.pathname, i.protocol = o[0], "/" !== i.pathname.charAt(0) && (i.pathname = "/" + i.pathname);
+                    let a = !e.protocol || ":" === e.protocol || e.protocol === n.protocol,
+                        s = e.hostname === document.domain && e.port === n.port;
+                    return i.sameOrigin = a && (!e.hostname || s), "/" === i.pathname && (r[t] = i), i
+                }
+            }, {}], 15: [function (t, e) {
+                function r(t, e) {
+                    let n = t.responseType;
+                    return "json" === n && null !== e ? e : "arraybuffer" === n || "blob" === n || "json" === n ? i(t.response) : "text" === n || "" === n || void 0 === n ? i(t.responseText) : void 0
+                }
+
+                let i = t(18);
+                e.exports = r
+            }, {}], 16: [function (t, e) {
+                function r() {
+                }
+
+                function i(t, e, n, r) {
+                    return function () {
+                        return u.recordSupportability("API/" + e + "/called"), o(t + e, [f.now()].concat(s(arguments)), n ? null : this, r), n ? void 0 : this
+                    }
+                }
+
+                let o = t("handle"), a = t(28), s = t(29),
+                    f = t("loader"), u = t(21), d = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = d);
+                let l = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+                    p = "api-", h = p + "ixn-";
+                a(l, function (t, e) {
+                    d[e] = i(p, e, !0, "api")
+                }), d.addPageAction = i(p, "addPageAction", !0), d.setCurrentRouteName = i(p, "routeName", !0), e.exports = newrelic, d.interaction = function () {
+                    return (new r).get()
+                };
+                let m = r.prototype = {
+                };
+                a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) {
+                    m[e] = i(h, e)
+                }), newrelic.noticeError = function (t, e) {
+                    "string" == typeof t && (t = new Error(t)), u.recordSupportability("API/noticeError/called"), o("err", [t, f.now(), !1, e])
+                }
+            }, {}], 17: [function (t, e, n) {
+                function r(t) {
+                    if (NREUM.init) {
+                        for (let e = NREUM.init, n = t.split("."), r = 0; r < n.length - 1; r++) if (e = e[n[r]], "object" != typeof e) return;
+                        return e = e[n[n.length - 1]]
+                    }
+                }
+
+                e.exports = {getConfiguration: r}
+            }, {}], 18: [function (t, e) {
+                e.exports = function (t) {
+                    if ("string" == typeof t && t.length) return t.length;
+                    if ("object" == typeof t) {
+                        if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+                        if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+                        if (!("undefined" != typeof FormData && t instanceof FormData)) try {
+                            return JSON.stringify(t).length
+                        } catch (e) {
+                        }
+                    }
+                }
+            }, {}], 19: [function (t, e) {
+                let r = !1;
+                try {
+                    let i = Object.defineProperty({}, "passive", {
+                        get: function () {
+                            r = !0
+                        }
+                    });
+                    window.addEventListener("testPassive", null, i), window.removeEventListener("testPassive", null, i)
+                } catch (o) {
+                }
+                e.exports = function (t) {
+                    return r ? {passive: !0, capture: !!t} : !!t
+                }
+            }, {}], 20: [function (t, e) {
+                let r = 0, i = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);
+                i && (r = +i[1]), e.exports = r
+            }, {}], 21: [function (t, e) {
+                function r(t, e) {
+                    let n = [a, t, {name: t}, e];
+                    return o("storeMetric", n, null, "api"), n
+                }
+
+                function i(t, e) {
+                    let n = [s, t, {name: t}, e];
+                    return o("storeEventMetrics", n, null, "api"), n
+                }
+
+                let o = t("handle"), a = "sm", s = "cm";
+                e.exports = {
+                    constants: {SUPPORTABILITY_METRIC: a, CUSTOM_METRIC: s},
+                    recordSupportability: r,
+                    recordCustom: i
+                }
+            }, {}], 22: [function (t, e) {
+                function r() {
+                    return s.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a
+                }
+
+                function i() {
+                    return o
+                }
+
+                let o = (new Date).getTime(), a = o, s = t(30);
+                e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = i
+            }, {}], 23: [function (t, e) {
+                function r(t) {
+                    return !(!t || !t.protocol || "file:" === t.protocol)
+                }
+
+                e.exports = r
+            }, {}], 24: [function (t, e) {
+                function r(t) {
+                    let n = t.getEntries();
+                    n.forEach(function (t) {
+                        "first-paint" === t.name ? p("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && p("timing", ["fcp", Math.floor(t.startTime)])
+                    })
+                }
+
+                function i(t) {
+                    let n = t.getEntries();
+                    if (n.length > 0) {
+                        let r = n[n.length - 1];
+                        let i = [r], o = a({});
+                        o && i.push(o), p("lcp", i)
+                    }
+                }
+
+                function o(t) {
+                    t.getEntries().forEach(function (t) {
+                        p("cls", [t])
+                    })
+                }
+
+                function a(t) {
+                    if (e) return e.type && (t["net-type"] = e.type), t
+                }
+
+                if (!("init" in NREUM && "page_view_timing" in NREUM.init)) {
+                    let u, d, l = t("handle"), v = t(19)
+                    if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) {
+                        u = new PerformanceObserver(r);
+                        try {
+                            u.observe({entryTypes: ["paint"]})
+                        } catch (g) {
+                        }
+                        d = new PerformanceObserver(i);
+                        try {
+                            d.observe({entryTypes: ["largest-contentful-paint"]})
+                        } catch (g) {
+                        }
+                        l = new PerformanceObserver(o);
+                        try {
+                            l.observe({type: "layout-shift", buffered: !0})
+                        } catch (g) {
+                        }
+                    }
+                    if ("addEventListener" in document) {
+                        let x = ["click", "keydown", "mousedown", "pointerdown", "touchstart"];
+                        x.forEach(function (t) {
+                            document.addEventListener(t, v(!1))
+                        })
+                    }
+                }
+            }, {}], 25: [function (t, e) {
+                function r() {
+                    function t() {
+                        return e ? 15 & e[n++] : 16 * Math.random() | 0
+                    }
+
+                    let e = null, n = 0, r = window.crypto;
+                    r && r.getRandomValues && (e = r.getRandomValues(new Uint8Array(31)));
+                    for (let i, o = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", a = "", s = 0; s < o.length; s++) i = o[s], "x" === i ? a += t().toString(16) : "y" === i ? (i = 3 & t() | 8, a += i.toString(16)) : a += i;
+                    return a
+                }
+
+                function i() {
+                    return a(16)
+                }
+
+                function o() {
+                    return a(32)
+                }
+
+                function a(t) {
+                    function e() {
+                        return n ? 15 & n[r++] : 16 * Math.random() | 0
+                    }
+
+                    let n = null, r = 0, i = window.crypto;
+                    i && i.getRandomValues && Uint8Array && (n = i.getRandomValues(new Uint8Array(31)));
+                    for (let o = [], a = 0; a < t; a++) o.push(e().toString(16));
+                    return o.join("")
+                }
+
+                e.exports = {generateUuid: r, generateSpanId: i, generateTraceId: o}
+            }, {}], 26: [function (t, e) {
+                function r(t, e) {
+                    if (!i) return !1;
+                    if (t !== i) return !1;
+                    if (!e) return !0;
+                    if (!o) return !1;
+                    for (let n = o.split("."), r = e.split("."), a = 0; a < r.length; a++) if (r[a] !== n[a]) return !1;
+                    return !0
+                }
+
+                let i = null, o = null, a = /Version\/(\S+)\s+Safari/;
+                if (navigator.userAgent) {
+                    let s = navigator.userAgent, c = s.match(a);
+                    c && s.indexOf("Chrome") === -1 && s.indexOf("Chromium") === -1 && (i = "Safari", o = c[1])
+                }
+                e.exports = {agent: i, version: o, match: r}
+            }, {}], 27: [function (t, e) {
+                function r(t) {
+                    function e() {
+                        t(s && document[s] ? document[s] : document[o] ? "hidden" : "visible")
+                    }
+
+                    "addEventListener" in document && a && document.addEventListener(a, e, i(!1))
+                }
+
+                let i = t(19);
+                e.exports = r;
+                let o, a, s;
+            }, {}], 28: [function (t, e) {
+                function r(t, e) {
+                    let n = [], r = "", o = 0;
+                    for (r in t) i.call(t, r) && (n[o] = e(r, t[r]), o += 1);
+                    return n
+                }
+
+                let i = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}], 29: [function (t, e) {
+
+            }, {}], 30: [function (t, e) {
+                e.exports = {exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart}
+            }, {}], ee: [function (t, e) {
+                function r() {
+                }
+
+                function i(t) {
+                    function e(t) {
+                        return t && t instanceof r ? t : t ? f(t, c, a) : a()
+                    }
+
+                    function n(n, r, i, o, a) {
+                        if (a !== !1 && (a = !0), !p.aborted || o) {
+                            t && a && t(n, r, i);
+                            for (let s = e(i), c = m(n), f = c.length, u = 0; u < f; u++) c[u].apply(s, r);
+                            let l = d[y[n]];
+                            return l && l.push([x, n, r, s]), s
+                        }
+                    }
+
+                    function o(t, e) {
+                        g[t] = m(t).concat(e)
+                    }
+
+                    function h(t, e) {
+                        let n = g[t];
+                        if (n) for (let r = 0; r < n.length; r++) n[r] === e && n.splice(r, 1)
+                    }
+
+                    function m(t) {
+                        return g[t] || []
+                    }
+
+                    function v(t) {
+                        return l[t] = l[t] || i(n)
+                    }
+
+                    function w(t, e) {
+                        p.aborted || u(t, function (t, n) {
+                            e = e || "feature", y[n] = e, e in d || (d[e] = [])
+                        })
+                    }
+
+                    let g = {}, y = {}, x = {
+                        on: o,
+                        addEventListener: o,
+                        removeEventListener: h,
+                        emit: n,
+                        get: v,
+                        listeners: m,
+                        context: e,
+                        buffer: w,
+                        abort: s,
+                        aborted: !1
+                    };
+                    return x
+                }
+
+                function o(t) {
+                    return f(t, c, a)
+                }
+
+                function a() {
+                    return new r
+                }
+
+                function s() {
+                    (p.aborted = !0, d = p.backlog = {})
+                }
+
+                let c = "nr@context", f = t("gos"), u = t(28), d = {}, l = {}, p = e.exports = i();
+                e.exports.getOrSetContext = o, p.backlog = d
+            }, {}], gos: [function (t, e) {
+                function r(t, e, n) {
+                    if (i.call(t, e)) return t[e];
+                    let r = n();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(t, e, {
+                            value: r,
+                            writable: !0,
+                            enumerable: !1
+                        }), r
+                    } catch (o) {
+                    }
+                    return t[e] = r, r
+                }
+
+                let i = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}], handle: [function (t, e) {
+                function r(t, e, n, r) {
+                    i.buffer([t], r), i.emit(t, e, n)
+                }
+
+                let i = t("ee").get("handle");
+                e.exports = r, r.ee = i
+            }, {}], id: [function (t, e) {
+                function r(t) {
+                    let e = typeof t;
+                    return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, o, function () {
+                        return i++
+                    })
+                }
+
+                let i = 1, o = "nr@id", a = t("gos");
+                e.exports = r
+            }, {}], loader: [function (t, e) {
+                function i() {
+                    "complete" === v.readyState && o()
+                }
+
+                function o() {
+                    s("mark", ["domContent", a() + O.offset], null, "api")
+                }
+
+                let a = t(22), s = t("handle"), u = t(26), d = t(23),
+                    p = t(19),
+                    m = window,
+                    v = m.document,
+                    w = "addEventListener", g = "attachEvent", y = m.XMLHttpRequest,
+                    x = y && y.prototype,
+                    b = !d(m.location);
+                NREUM.o = {
+                    ST: setTimeout,
+                    CT: clearTimeout,
+                    XHR: y,
+                    REQ: m.Request,
+                    EV: m.Event,
+                    PR: m.Promise,
+                    MO: m.MutationObserver
+                };
+                let E = "" + location,
+                    S = y && x && x[w] && !/CriOS/.test(navigator.userAgent), O = e.exports = {
+                    offset: a.getLastTimestamp(),
+                    now: a,
+                    origin: E,
+                    features: {},
+                    xhrWrappable: S,
+                    userAgent: u,
+                    disabled: b
+                };
+                if (!b) {
+                    t(16), t(24), v[w] ? (v[w]("DOMContentLoaded", o, p(!1)), m[w]("load", p(!1))) : (v[g]("onreadystatechange", i), m[g]("onload")), s("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+                }
+            }, {}], "wrap-function": [function (t, e) {
+                function r(t, e) {
+                    function n(e, n, r, c, f) {
+                        function nrWrapper() {
+                            let o, a, u, l;
+                            try {
+                                a = this, o = d(arguments), u = "function" == typeof r ? r(o, a) : r || {}
+                            } catch (p) {
+                                i([p, "", [o, a, c], u], t)
+                            }
+                            s(n + "start", [o, a, c], u, f);
+                            try {
+                                return l = e.apply(a, o)
+                            } catch (h) {
+                                throw s(n + "err", [o, a, h], u, f), h
+                            } finally {
+                                s(n + "end", [o, a, l], u, f)
+                            }
+                        }
+
+                        return a(e) ? e : (n || (n = ""), nrWrapper[l] = e, o(e, nrWrapper, t), nrWrapper)
+                    }
+
+                    function r(t, e, r, i, o) {
+                        r || (r = "");
+                        let s, c, f, u = "-" === r.charAt(0);
+                        for (f = 0; f < e.length; f++) c = e[f], s = t[c], a(s) || (t[c] = n(s, u ? c + r : r, i, c, o))
+                    }
+
+                    function s(n, r, o, a) {
+                        if (!h || e) {
+                            let s = h;
+                            h = !0;
+                            try {
+                                t.emit(n, r, o, e, a)
+                            } catch (c) {
+                                i([c, n, r, o], t)
+                            }
+                            h = s
+                        }
+                    }
+
+                    return t || (t = u), n.inPlace = r, n.flag = l, n
+                }
+
+                function i(t, e) {
+                    e || (e = u);
+                    try {
+                        e.emit("internal-error", t)
+                    } catch (n) {
+                    }
+                }
+
+                function o(t, e, n) {
+                    if (Object.defineProperty && Object.keys) try {
+                        let r = Object.keys(t);
+                        return r.forEach(function (n) {
+                            Object.defineProperty(e, n, {
+                                get: function () {
+                                    return t[n]
+                                }, set: function (e) {
+                                    return t[n] = e, e
+                                }
+                            })
+                        }), e
+                    } catch (o) {
+                        i([o], n)
+                    }
+                    for (let a in t) p.call(t, a) && (e[a] = t[a]);
+                    return e
+                }
+
+                function a(t) {
+                    return !(t && t instanceof Function && t.apply && !t[l])
+                }
+
+                function s(t, e) {
+                    let n = e(t);
+                    return n[l] = t, o(t, n, u), n
+                }
+
+                function c(t, e, n) {
+                    let r = t[e];
+                    t[e] = s(r, n)
+                }
+
+                function f() {
+                    for (let t = arguments.length, e = new Array(t), n = 0; n < t; ++n) e[n] = arguments[n];
+                    return e
+                }
+
+                let u = t("ee"), d = t(29), l = "nr@original", p = Object.prototype.hasOwnProperty,
+                    h = !1;
+                e.exports = r, e.exports.wrapFunction = s, e.exports.wrapInPlace = c, e.exports.argsToArray = f
+            }, {}]
+        }, {}, ["loader", 2, 13, 4, 3]);</script>
+        <meta http-equiv="ClearType" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui"/>
+
+
+        <meta name="copyright" content="&copy; 2022 Boston University"/>
+
+        <link rel="profile" href="https://gmpg.org/xfn/11"/>
+        <link rel="pingback" href="https://www.bu.edu/shs/xmlrpc.php"/>
+        <link rel="apple-touch-icon"
+              href="https://www.bu.edu/shs/wp-content/themes/responsive-framework/icons/apple-touch-icon-precomposed.png"/>
+
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" id="responsi-css"
+              href="https://www.bu.edu/shs/wp-content/themes/r-studenthealth/style.min.css?ver=1.0.3"
+              type="text/css"
+              media="all"/>
+        <!--<![endif]-->
+        <!--[if (lt IE 9) & (!IEMobile 7)]>
+        <link rel="stylesheet" id="responsi-ie-css"
+              href="https://www.bu.edu/shs/wp-content/themes/r-studenthealth/ie.min.css?ver=1.0.3"
+              type="text/css"
+              media="all"/>
+        <![endif]-->
+
+        <link rel="dns-prefetch" href="//cloud.typography.com"/>
+        <link rel="dns-prefetch" href="//s.w.org"/>
+        <script type="text/javascript">
+            window._wpemojiSettings = {
+                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
+                "ext": ".png",
+                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
+                "svgExt": ".svg",
+                "source": {"concatemoji": "https:\/\/www.bu.edu\/shs\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}
+            };
+            /*! This file is auto-generated */
+            !function (e, a, t) {
+                let o, i, p = a.createElement("canvas"),
+                    s = p.getContext && p.getContext("2d");
+
+                function c(e, t) {
+                    let a = String.fromCharCode;
+                    s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, e), 0, 0);
+                    let r = p.toDataURL();
+                    return s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, t), 0, 0), r === p.toDataURL()
+                }
+
+                function l(e) {
+                    if (!s || !s.fillText) return !1;
+                    switch (s.textBaseline = "top", s.font = "600 32px Arial", e) {
+                        case"flag":
+                            return !c([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) && (!c([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !c([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]));
+                        case"emoji":
+                            return !c([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340])
+                    }
+                    return !1
+                }
+
+                for (i = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, o = 0; o < i.length; o++) t.supports[i[o]] = l(i[o]), t.supports.everything = t.supports.everything && t.supports[i[o]], "flag" !== i[o] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[i[o]]);
+                t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () {
+                    t.DOMReady = !0
+                }, t.supports.everything
+            }(window, document, window._wpemojiSettings);
+        </script>
+        <style>
+            #wpadminbar #wp-admin-bar-my-networks > {
+                content: "\f325";
+                top: 3px;
+            }
+        </style>
+        <link rel="stylesheet" id="bu-navigation-block-frontend-style-css"
+              href="https://www.bu.edu/shs/wp-content/mu-plugins/bu-navigation/src/block-frontend.css?ver=1.3.4"
+              type="text/css" media="all"/>
+        <link rel="stylesheet" id="bu-slideshow-css"
+              href="https://www.bu.edu/shs/wp-content/plugins/bu-slideshow/interface/css/bu-slideshow.css?ver=2.3.12"
+              type="text/css" media="all"/>
+        <link rel="stylesheet" id="bu-branding-fonts-css"
+              href="//cloud.typography.com/6127692/660644/css/fonts.css?ver=0.3.2" type="text/css"
+              media="all"/>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/mu-plugins/bu-cms/interface/js/outbound_link_tracking.js?ver=5.4.2"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/mu-plugins/bu-cms/interface/js/download_tracking.js?ver=1.8.4"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.17"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.17"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.4.17"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/themes/responsive-framework/js/vendor/modernizer.min.js?ver=2.8.3"></script>
+        <link rel="https://api.w.org/" href="https://www.bu.edu/shs/wp-json/"/>
+        <link rel="canonical" href="https://www.bu.edu/shs/behavioral-medicine/"/>
+        <link rel="shortlink" href="https://www.bu.edu/shs/?p=6759"/>
+        <link rel="alternate" type="application/json+oembed"
+              href="https://www.bu.edu/shs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bu.edu%2Fshs%2Fbehavioral-medicine%2F"/>
+        <link rel="alternate" type="text/xml+oembed"
+              href="https://www.bu.edu/shs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.bu.edu%2Fshs%2Fbehavioral-medicine%2F&#038;format=xml"/>
+        <meta name="last-updated" content="2018-06-11T10:47:47-04:00"/>
+
+        <script type="text/javascript">
+
+            let _gaq = _gaq || [];
+
+            _gaq.push(['_setAccount', 'UA-124985-1']);
+            _gaq.push(['_trackPageview']);
+            _gaq.push(['b._setAccount', 'UA-36737920-1']);
+            _gaq.push(['b._trackPageview']);
+            /* begin other trackers */
+
+
+            (function () {
+                let ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'https://www') +
+                    '.google-analytics.com/ga.js';
+                let s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]>
+        </script>
+
+        <link rel="stylesheet" id="custom-css-css" type="text/css"
+              href="https://www.bu.edu/shs/files/custom.min.css"/>
+        <link rel="stylesheet" type="text/css" media="screen"
+              href="https://www.bu.edu/shs/wp-content/plugins/covid-alert/alert.css"/>
+
+        <!--   NEU <-->
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            let f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGQLLJ');</script>
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8"/>
+        <meta name="MSSmartTagsPreventParsing" content="true"/>
+        <!--[if lte IE 9]>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Mental Health - University Health and Counseling Services</title>
+        <link type="text/plain" rel="author" href="https://www.northeastern.edu/uhcs//authors.txt"/>
+        <link type="image/x-icon" rel="shortcut icon"
+              href="https://www.northeastern.edu/uhcs//favicon.ico"/>
+        <meta name="robots"
+              content="index, follow, max-video-preview:-1, max-snippet:-1, max-image-preview:large"/>
+
+        <!-- This site is optimized with the Yoast SEO plugin v18.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+        <link rel="canonical" href="https://www.northeastern.edu/uhcs/counseling-services/"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title"
+              content="Mental Health - University Health and Counseling Services"/>
+        <meta property="og:description"
+              content="UHCS Mental Health provides a variety of services to meet students’ needs including: Find@Northeastern What to expect Emergencies Mental Health…"/>
+        <meta property="og:url" content="https://www.northeastern.edu/uhcs/counseling-services/"/>
+        <meta property="og:site_name" content="University Health and Counseling Services"/>
+        <meta property="article:modified_time" content="2021-09-15T20:29:57+00:00"/>
+        <meta name="twitter:label1" content="Est. reading time"/>
+        <meta name="twitter:data1" content="1 minute"/>
+        <script type="application/ld+json" class="yoast-schema-graph">{
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://www.northeastern.edu/uhcs/#website",
+                    "url": "https://www.northeastern.edu/uhcs/",
+                    "name": "University Health and Counseling Services",
+                    "description": "",
+                    "potentialAction": [
+                        {
+                            "@type": "SearchAction",
+                            "target": {
+                                "@type": "EntryPoint",
+                                "urlTemplate": "https://www.northeastern.edu/uhcs/?s={search_term_string}"
+                            },
+                            "query-input": "required name=search_term_string"
+                        }
+                    ],
+                    "inLanguage": "en-US"
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://www.northeastern.edu/uhcs/counseling-services/#webpage",
+                    "url": "https://www.northeastern.edu/uhcs/counseling-services/",
+                    "name": "Mental Health - University Health and Counseling Services",
+                    "isPartOf": {
+                        "@id": "https://www.northeastern.edu/uhcs/#website"
+                    },
+                    "datePublished": "2014-07-14T19:47:11+00:00",
+                    "dateModified": "2021-09-15T20:29:57+00:00",
+                    "breadcrumb": {
+                        "@id": "https://www.northeastern.edu/uhcs/counseling-services/#breadcrumb"
+                    },
+                    "inLanguage": "en-US",
+                    "potentialAction": [
+                        {
+                            "@type": "ReadAction",
+                            "target": [
+                                "https://www.northeastern.edu/uhcs/counseling-services/"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.northeastern.edu/uhcs/counseling-services/#breadcrumb",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.northeastern.edu/uhcs/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Mental Health"
+                        }
+                    ]
+                }
+            ]
+        }</script>
+        <!-- / Yoast SEO plugin. -->
+
+
+        <link rel="dns-prefetch" href="//s.w.org"/>
+        <link rel="stylesheet" id="wp-block-library-css"
+              href="https://www.northeastern.edu/uhcs/wp-includes/css/dist/block-library/style.min.css?ver=5.9.3"
+              type="text/css" media="all"/>
+        <style id="global-styles-inline-css">
+            body {
+                --wp--preset--color--black: #000000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #ffffff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+                --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+                --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+                --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+                --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+                --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+                --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+                --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+                --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+            }
+        </style>
+        <link rel="stylesheet" id="style-css"
+              href="https://www.northeastern.edu/uhcs/ui/css/style.css?v=1586460651"
+              type="text/css" media="all"/>
+        <link rel="stylesheet" id="global-header-footer-css"
+              href="https://www.northeastern.edu/nuglobalutils/common/css/headerfooter.css?ver=1.0.0"
+              type="text/css"
+              media="all"/>
+        <script type="text/javascript" src="https://www.northeastern.edu/uhcs/ui/js/jquery.js"
+                id="jquery-js"></script>
+        <link rel="https://api.w.org/" href="https://www.northeastern.edu/uhcs/wp-json/"/>
+        <link rel="alternate" type="application/json"
+              href="https://www.northeastern.edu/uhcs/wp-json/wp/v2/pages/66"/>
+        <link rel="shortlink" href="https://www.northeastern.edu/uhcs/?p=66"/>
+        <link rel="alternate" type="application/json+oembed"
+              href="https://www.northeastern.edu/uhcs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.northeastern.edu%2Fuhcs%2Fcounseling-services%2F"/>
+        <link rel="alternate" type="text/xml+oembed"
+              href="https://www.northeastern.edu/uhcs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.northeastern.edu%2Fuhcs%2Fcounseling-services%2F&#038;format=xml"/>
+
+        <!-- GA Google Analytics @ https://m0n.co/ga -->
+        <script type="text/javascript">
+            let _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1768083-1']);
+            _gaq.push(['_trackPageview']);
+            (function () {
+                let ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'https://www') +
+                    '.google-analytics.com/ga.js';
+                let s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <link rel="stylesheet"
+              href="/uhcs/wp-content/plugins/mpds-media-tools/cache/widgetkit-736b6e57.css"/>
+        <script src="/uhcs/wp-content/plugins/mpds-media-tools/cache/widgetkit-2a7b0c61.js"></script>
+    </head>
+    <body id="top"
+          class="page-template page page-id-6759 page-parent has-bu-branding has-bu-masterplate color-grape 6759 banner-has-image l-default sidebarLocation-right page-template-landing">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGQLLJ"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div id="nu__globalheader">
+            <div id="nu__utility-nav">
+                <a href="https://www.northeastern.edu"
+                   title="Northeastern University [will open in new window]"
+                   aria-label="Northeastern University [will open in new window]"
+                   target="_blank" rel="nofollow noopener noreferrer"><img
+                        src="https://www.northeastern.edu/wp-content/uploads/global-logo.png"
+                        alt="northeastern university seal"/></a>
+                <div id="nu__mainmenu-supernav"><a id="nu__supernav-toggle"
+                                                   href="javascript:void(0);"
+                                                   title="Click to show/hide explore northeastern menu"
+                                                   aria-haspopup="true" class="js__mainmenu-item"
+                                                   data-title="Menu"
+                                                   rel="nofollow noopener noreferrer">EXPLORE
+                    NORTHEASTERN</a>
+                    <div id="nu__supernav" class="navigational" style="background: rgba(0,0,0,0.8)">
+                        <section>
+                            <div class="search">search will appear here</div>
+                            <div class="fixedbg">
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="items">
+                                <ul role="list" aria-hidden="true">
+                                    <li title="view About" aria-label="view About" class="active">
+                                        About<a href="javascript:void(0);"
+                                                class="blur blurfirstcat blurclosepanel">blur top to
+                                        close menu panel</a><!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">About</li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/northeastern-experience"
+                                                    title="learn more about About Northeastern [will open in new window]"
+                                                    aria-label="learn more about About Northeastern [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/Favicon_2018_v1-01_501x449_acf_cropped-1_50x50_acf_cropped.png"
+                                                        alt=""/></div>
+                                                <div><span>About Northeastern</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/about/university-administration"
+                                                    title="learn more about University Leadership [will open in new window]"
+                                                    aria-label="learn more about University Leadership [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_administration_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>University Leadership</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://accomplishments.northeastern.edu/"
+                                                    title="learn more about Institutional Accomplishments [will open in new window]"
+                                                    aria-label="learn more about Institutional Accomplishments [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_institutional_accomplishments-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Institutional Accomplishments</span>
+                                                </div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://studentlife.northeastern.edu/ "
+                                                    title="learn more about Student Life [will open in new window]"
+                                                    aria-label="learn more about Student Life [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_student_life-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Student Life</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/sustainability/ "
+                                                    title="learn more about Sustainability [will open in new window]"
+                                                    aria-label="learn more about Sustainability [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_sustainability-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Sustainability</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/campusmap/ "
+                                                    title="learn more about Maps and Directions [will open in new window]"
+                                                    aria-label="learn more about Maps and Directions [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_maps_directions-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Maps and Directions</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/art/"
+                                                    title="learn more about Art at Northeastern [will open in new window]"
+                                                    aria-label="learn more about Art at Northeastern [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_art-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Art at Northeastern</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://hr.northeastern.edu"
+                                                    title="learn more about Working at Northeastern [will open in new window]"
+                                                    aria-label="learn more about Working at Northeastern [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_human_resources-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Working at Northeastern</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/diversity/ "
+                                                    title="learn more about Diversity & Inclusion [will open in new window]"
+                                                    aria-label="learn more about Diversity & Inclusion [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_diversity_inclusion-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Diversity & Inclusion</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 0</a><!-- end category --></li>
+                                    <li title="view Admissions" aria-label="view Admissions"
+                                        class=" hideuntilmobile">Admissions<a
+                                            href="javascript:void(0);" class="blur blurprevcat">blur
+                                        from cat 1</a><!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Admissions</li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/admissions/ "
+                                                    title="learn more about Undergraduate [will open in new window]"
+                                                    aria-label="learn more about Undergraduate [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/undergraduate_admissions-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Undergraduate</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/graduate/"
+                                                    title="learn more about Graduate [will open in new window]"
+                                                    aria-label="learn more about Graduate [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/graduate_admissions_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Graduate</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://studentfinance.northeastern.edu"
+                                                    title="learn more about Student Financial Services [will open in new window]"
+                                                    aria-label="learn more about Student Financial Services [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/student_financial_services-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Student Financial Services</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/learnforlife/"
+                                                    title="learn more about Lifelong Learning [will open in new window]"
+                                                    aria-label="learn more about Lifelong Learning [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/lifelong_learning-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Lifelong Learning</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/law/admission/ "
+                                                    title="learn more about School of Law [will open in new window]"
+                                                    aria-label="learn more about School of Law [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/school_of_law-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>School of Law</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a href="https://www.cps.neu.edu/"
+                                                                   title="learn more about College of Professional Studies [will open in new window]"
+                                                                   aria-label="learn more about College of Professional Studies [will open in new window]"
+                                                                   target="_blank"
+                                                                   rel="noopener noreferrer"
+                                                                   class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_diversity_inclusion-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>College of Professional Studies</span>
+                                                </div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/parents/"
+                                                    title="learn more about Parents [will open in new window]"
+                                                    aria-label="learn more about Parents [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/parents-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Parents</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 1</a><!-- end category --></li>
+                                    <li title="view Academics" aria-label="view Academics"
+                                        class=" hideuntilmobile">Academics<a
+                                            href="javascript:void(0);" class="blur blurprevcat">blur
+                                        from cat 2</a><!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Academics</li>
+                                            <li role="listitem"><a
+                                                    href="https://provost.northeastern.edu/"
+                                                    title="learn more about Office of the Provost [will open in new window]"
+                                                    aria-label="learn more about Office of the Provost [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/provost_office-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Office of the Provost</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://chancellor.northeastern.edu/"
+                                                    title="learn more about Office of the Chancellor [will open in new window]"
+                                                    aria-label="learn more about Office of the Chancellor [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div></div>
+                                                <div><span>Office of the Chancellor</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/academics/colleges/"
+                                                    title="learn more about Colleges and Schools [will open in new window]"
+                                                    aria-label="learn more about Colleges and Schools [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/colleges_and_schools-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Colleges and Schools</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://undergraduate.northeastern.edu/ "
+                                                    title="learn more about Undergraduate Education [will open in new window]"
+                                                    aria-label="learn more about Undergraduate Education [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/undergraduate_education-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Undergraduate Education</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://undergraduate.northeastern.edu/nuterm/ "
+                                                    title="learn more about Summer Program for Rising Sophomores [will open in new window]"
+                                                    aria-label="learn more about Summer Program for Rising Sophomores [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/summer_program_for_rising_sophomores-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div>
+                                                    <span>Summer Program for Rising Sophomores</span>
+                                                </div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/graduate/ "
+                                                    title="learn more about Graduate Education [will open in new window]"
+                                                    aria-label="learn more about Graduate Education [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/graduate_admissions_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Graduate Education</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://phd.northeastern.edu"
+                                                    title="learn more about PhD Education [will open in new window]"
+                                                    aria-label="learn more about PhD Education [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/phd_education-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>PhD Education</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/academics/online-learning/"
+                                                    title="learn more about Online Learning [will open in new window]"
+                                                    aria-label="learn more about Online Learning [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/online_learning-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Online Learning</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://registrar.northeastern.edu/ "
+                                                    title="learn more about Registrar [will open in new window]"
+                                                    aria-label="learn more about Registrar [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/registrar-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Registrar</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://library.northeastern.edu/"
+                                                    title="learn more about University Library [will open in new window]"
+                                                    aria-label="learn more about University Library [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/university_libraries-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>University Library</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 2</a><!-- end category --></li>
+                                    <li title="view Experiential Learning"
+                                        aria-label="view Experiential Learning" class="">
+                                        Experiential Learning<a href="javascript:void(0);"
+                                                                class="blur blurprevcat">blur from
+                                        cat 3</a><!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Experiential
+                                                Learning
+                                            </li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/experiential-learning/"
+                                                    title="learn more about Experiential Learning [will open in new window]"
+                                                    aria-label="learn more about Experiential Learning [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Experiential Learning</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/coop/"
+                                                    title="learn more about Cooperative Education [will open in new window]"
+                                                    aria-label="learn more about Cooperative Education [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning_cooperative_education-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Cooperative Education</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/experiential-learning/student-research/"
+                                                    title="learn more about Student Research [will open in new window]"
+                                                    aria-label="learn more about Student Research [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning_student_research-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Student Research</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/experiential-learning/service-learning/ "
+                                                    title="learn more about Service Learning [will open in new window]"
+                                                    aria-label="learn more about Service Learning [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning_service_learning-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Service Learning</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/experiential-learning/global-experience/"
+                                                    title="learn more about Global Experience [will open in new window]"
+                                                    aria-label="learn more about Global Experience [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning_global_experience-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Global Experience</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/geo/studyabroad/ "
+                                                    title="learn more about Study Abroad [will open in new window]"
+                                                    aria-label="learn more about Study Abroad [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning_study_abroad-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Study Abroad</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 3</a><!-- end category --></li>
+                                    <li title="view Global" aria-label="view Global" class="">Global<a
+                                            href="javascript:void(0);" class="blur blurprevcat">blur
+                                        from cat 4</a><!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Global</li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/executive-orders/"
+                                                    title="learn more about Legal Updates for Students and Scholars [will open in new window]"
+                                                    aria-label="learn more about Legal Updates for Students and Scholars [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/office_alumni_relations-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div>
+                                                    <span>Legal Updates for Students and Scholars</span>
+                                                </div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href=" https:///www.northeastern.edu/geo/"
+                                                    title="learn more about Global Experience Office (GEO) [will open in new window]"
+                                                    aria-label="learn more about Global Experience Office (GEO) [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/global_experience_office_geo-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Global Experience Office (GEO)</span>
+                                                </div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/geo/studyabroad/ "
+                                                    title="learn more about Study Abroad [will open in new window]"
+                                                    aria-label="learn more about Study Abroad [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/experiential_learning_study_abroad-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Study Abroad</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/geo/dialogue/ "
+                                                    title="learn more about Dialogue of Civilizations [will open in new window]"
+                                                    aria-label="learn more about Dialogue of Civilizations [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/dialogue_of_civilizations-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Dialogue of Civilizations</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/geo/globalcoop/ "
+                                                    title="learn more about Global Co-op [will open in new window]"
+                                                    aria-label="learn more about Global Co-op [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/global_coop-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Global Co-op</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://cos.northeastern.edu/marine-environmental-sciences/three-seas/"
+                                                    title="learn more about Three Seas [will open in new window]"
+                                                    aria-label="learn more about Three Seas [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/three_seas-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Three Seas</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/learnforlife/campuses/"
+                                                    title="learn more about Campus Network System [will open in new window]"
+                                                    aria-label="learn more about Campus Network System [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/campus_network_system-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Campus Network System</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/nuin/ "
+                                                    title="learn more about The N.U.in Program [will open in new window]"
+                                                    aria-label="learn more about The N.U.in Program [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/nuin_-program-1.jpg"
+                                                        alt=""/></div>
+                                                <div><span>The N.U.in Program</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://provost.northeastern.edu/international-travel/ "
+                                                    title="learn more about International Travel [will open in new window]"
+                                                    aria-label="learn more about International Travel [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/international_travel-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>International Travel</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.damore-mckim.northeastern.edu/academic-programs/undergraduate-programs/bsib"
+                                                    title="learn more about BS in International Business [will open in new window]"
+                                                    aria-label="learn more about BS in International Business [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/bs_in_international_business-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>BS in International Business</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href=" https://www.northeastern.edu/ogs/ "
+                                                    title="learn more about Office of Global Services (OGS) [will open in new window]"
+                                                    aria-label="learn more about Office of Global Services (OGS) [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/office_of_global_services_ogs-1_50x50_acf_cropped.png"
+                                                        alt=""/></div>
+                                                <div><span>Office of Global Services (OGS)</span>
+                                                </div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 4</a><!-- end category --></li>
+                                    <li title="view Research" aria-label="view Research"
+                                        class=" hideuntilmobile">Research<a
+                                            href="javascript:void(0);" class="blur blurprevcat">blur
+                                        from cat 5</a><!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Research</li>
+                                            <li role="listitem"><a
+                                                    href="https://research.northeastern.edu"
+                                                    title="learn more about Research Home [will open in new window]"
+                                                    aria-label="learn more about Research Home [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/research_home-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Research Home</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/institutes/"
+                                                    title="learn more about Centers & Institutes [will open in new window]"
+                                                    aria-label="learn more about Centers & Institutes [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/research_centers_institutes_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Centers & Institutes</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://research.northeastern.edu/about/themes/health/"
+                                                    title="learn more about Health [will open in new window]"
+                                                    aria-label="learn more about Health [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/research_health_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Health</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://research.northeastern.edu/about/themes/sustainability/"
+                                                    title="learn more about Sustainability [will open in new window]"
+                                                    aria-label="learn more about Sustainability [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/research_sustainability_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Sustainability</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://research.northeastern.edu/about/themes/security/"
+                                                    title="learn more about Security [will open in new window]"
+                                                    aria-label="learn more about Security [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/research_security_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Security</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 5</a><!-- end category --></li>
+                                    <li title="view Lifelong Learning"
+                                        aria-label="view Lifelong Learning" class="">Lifelong
+                                        Learning<a href="javascript:void(0);"
+                                                   class="blur blurprevcat">blur from cat 6</a>
+                                        <!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Lifelong
+                                                Learning
+                                            </li>
+                                            <li role="listitem"><a
+                                                    href=" https://www.northeastern.edu/graduate/"
+                                                    title="learn more about Graduate Professional Programs [will open in new window]"
+                                                    aria-label="learn more about Graduate Professional Programs [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/graduate_admissions_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Graduate Professional Programs</span>
+                                                </div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/bachelors-completion"
+                                                    title="learn more about Bachelor’s Degree Completion [will open in new window]"
+                                                    aria-label="learn more about Bachelor’s Degree Completion [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/accounts_payable-1_50x50_acf_cropped-1.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Bachelor’s Degree Completion</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/learnforlife/"
+                                                    title="learn more about Lifelong Learning [will open in new window]"
+                                                    aria-label="learn more about Lifelong Learning [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/lifelong_learning-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Lifelong Learning</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://cps.northeastern.edu/about/schools-institutes/lowell-institute"
+                                                    title="learn more about Lowell Institute School [will open in new window]"
+                                                    aria-label="learn more about Lowell Institute School [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/lowell_institute_school_degree_completion-copy-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Lowell Institute School</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 6</a><!-- end category --></li>
+                                    <li title="view Regional Campuses"
+                                        aria-label="view Regional Campuses" class="">Regional
+                                        Campuses<a href="javascript:void(0);"
+                                                   class="blur blurprevcat">blur from cat 7</a>
+                                        <!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Regional
+                                                Campuses
+                                            </li>
+                                            <li role="listitem"><a
+                                                    href="https://charlotte.northeastern.edu/"
+                                                    title="learn more about Charlotte [will open in new window]"
+                                                    aria-label="learn more about Charlotte [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/charlotte_northeastern_campus-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Charlotte</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.burlington.northeastern.edu/"
+                                                    title="learn more about Burlington [will open in new window]"
+                                                    aria-label="learn more about Burlington [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/50x50_Burlington_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Burlington</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://roux.northeastern.edu/"
+                                                    title="learn more about Portland [will open in new window]"
+                                                    aria-label="learn more about Portland [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_50x50_portland-1_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Portland</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/csi/"
+                                                    title="learn more about Nahant [will open in new window]"
+                                                    aria-label="learn more about Nahant [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/50x50_Nahant_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Nahant</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://bayarea.northeastern.edu/"
+                                                    title="learn more about San Francisco [will open in new window]"
+                                                    aria-label="learn more about San Francisco [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/50x50_SF_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>San Francisco</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://seattle.northeastern.edu/"
+                                                    title="learn more about Seattle [will open in new window]"
+                                                    aria-label="learn more about Seattle [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/seattle_northeastern_campus-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Seattle</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://bayarea.northeastern.edu/"
+                                                    title="learn more about Silicon Valley [will open in new window]"
+                                                    aria-label="learn more about Silicon Valley [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/silicon_valley_northeastern_campus-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Silicon Valley</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://toronto.northeastern.edu/"
+                                                    title="learn more about Toronto [will open in new window]"
+                                                    aria-label="learn more about Toronto [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/toronto_northeastern_campus-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Toronto</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://vancouver.northeastern.edu/"
+                                                    title="learn more about Vancouver [will open in new window]"
+                                                    aria-label="learn more about Vancouver [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/vancouver_3_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Vancouver</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurnextcat">blur
+                                            to next category from 7</a><!-- end category --></li>
+                                    <li title="view Athletics" aria-label="view Athletics" class="">
+                                        Athletics<a href="javascript:void(0);"
+                                                    class="blur blurprevcat">blur from cat 8</a>
+                                        <!-- start category -->
+                                        <ul role="list" aria-hidden="false">
+                                            <li tabindex="-1" class="sectiontitle">Athletics</li>
+                                            <li role="listitem"><a href="https://www.nuhuskies.com/"
+                                                                   title="learn more about Northeastern Huskies [will open in new window]"
+                                                                   aria-label="learn more about Northeastern Huskies [will open in new window]"
+                                                                   target="_blank"
+                                                                   rel="noopener noreferrer"
+                                                                   class="blurfirst">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_huskies_gonu-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Northeastern Huskies</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/campusrec/intramurals/ "
+                                                    title="learn more about Intramural Sports [will open in new window]"
+                                                    aria-label="learn more about Intramural Sports [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_intramural_sports-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Intramural Sports</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/campusrec/ "
+                                                    title="learn more about Campus Recreation [will open in new window]"
+                                                    aria-label="learn more about Campus Recreation [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="noblur">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_campus_recreation-1_50x50_acf_cropped.jpeg"
+                                                        alt=""/></div>
+                                                <div><span>Campus Recreation</span></div>
+                                            </a></li>
+                                            <li role="listitem"><a
+                                                    href="https://www.northeastern.edu/athletics/athletic-traditions/"
+                                                    title="learn more about Traditions [will open in new window]"
+                                                    aria-label="learn more about Traditions [will open in new window]"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    class="blurlast">
+                                                <div><img
+                                                        src="https://www.northeastern.edu/wp-content/uploads/northeastern_athletic_traditions_mascot_50x50_acf_cropped.jpg"
+                                                        alt=""/></div>
+                                                <div><span>Traditions</span></div>
+                                            </a></li>
+                                        </ul>
+                                        <a href="javascript:void(1);" class="blur blurtofeatured">blur
+                                            to featured items</a><!-- end category --></li>
+                                    <!-- start featured --><a href="javascript:void(0);"
+                                                              class="blur blurfromfeatured">blur
+                                    from featured items</a>
+                                    <li class="featured first hideuntilmobile"><a
+                                            href="https://www.northeastern.edu/president/"
+                                            title="President Aoun [will open in new window]"
+                                            aria-label="President Aoun [will open in new window]"
+                                            target="_blank" rel="noopener noreferrer">
+                                        <div><img
+                                                src="https://www.northeastern.edu/wp-content/uploads/New_Seal_3.30.2018-01.jpg"
+                                                alt=""/></div>
+                                        <div>President Aoun</div>
+                                    </a></li>
+                                    <li class="featured"><a href="https://my.northeastern.edu/"
+                                                            title="MyNortheastern [will open in new window]"
+                                                            aria-label="MyNortheastern [will open in new window]"
+                                                            target="_blank"
+                                                            rel="noopener noreferrer">
+                                        <div><img
+                                                src="https://www.northeastern.edu/wp-content/uploads/mynortheastern.png"
+                                                alt=""/></div>
+                                        <div>MyNortheastern</div>
+                                    </a></li>
+                                    <li class="featured"><a
+                                            href="https://nu.outsystemsenterprise.com/FSD/"
+                                            title="Find Faculty & Staff [will open in new window]"
+                                            aria-label="Find Faculty & Staff [will open in new window]"
+                                            target="_blank" rel="noopener noreferrer">
+                                        <div><img
+                                                src="https://www.northeastern.edu/wp-content/uploads/find_icon.png"
+                                                alt=""/></div>
+                                        <div>Find Faculty & Staff</div>
+                                    </a></li>
+                                    <li class="featured"><a
+                                            href="https://calendar.northeastern.edu/"
+                                            title="Events [will open in new window]"
+                                            aria-label="Events [will open in new window]"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                        <div><img
+                                                src="https://www.northeastern.edu/wp-content/uploads/calendar_icon-1.png"
+                                                alt=""/></div>
+                                        <div>Events</div>
+                                    </a></li>
+                                    <li class="featured"><a
+                                            href="https://academicplan.northeastern.edu/"
+                                            title="Academic Plan [will open in new window]"
+                                            aria-label="Academic Plan [will open in new window]"
+                                            target="_blank" rel="noopener noreferrer">
+                                        <div><img
+                                                src="https://www.northeastern.edu/wp-content/uploads/2025_icon_3.png"
+                                                alt=""/></div>
+                                        <div>Academic Plan</div>
+                                    </a></li>
+                                    <li class="featured makeagift hideuntilmobile"><a
+                                            href="https://giving.northeastern.edu/"
+                                            title="Make a Gift [will open in new window]"
+                                            aria-label="Make a Gift [will open in new window]"
+                                            target="_blank" rel="noopener noreferrer">
+                                        <div><img
+                                                src="https://www.northeastern.edu/wp-content/uploads/make_a_gift_red.png"
+                                                alt=""/></div>
+                                        <div>Make a Gift</div>
+                                    </a></li>
+                                    <a href="javascript:void(0);" class="blur blurclosepanel">blur
+                                        bottom to close menu panel</a><!-- end featured --></ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="masthead" role="banner">
+            <div class="masthead-container">
+                <div class="brand">
+                    <a href="https://www.northeastern.edu/uhcs/" id="logo">
+                        <img src="https://www.northeastern.edu/uhcs//ui/svg/logo.svg"
+                             style="padding-top: 55px" alt=""/></a>
+                    <p class="site-description brand-site-description"></p>
+                </div>
+
+            </div>
+        </header>
+
+        <div class="wrapper">
+            <div class="content">
+
+
+                <div class="bannerContainer bannerContainer-windowWidth">
+                    <div class="content-container">
+                        <div class="banner-text-wrapper">
+                            <h1>Mental Health</h1>
+
+                            <p>Worrying all the time? Is your mood getting in the way of your
+                                academic success? Our team of
+                                experts can help guide you toward mental and emotional health and
+                                stability.
+                            </p>
+
+                            <p><a class="button" href="ServicesOfferred.html">Our
+                                Services</a></p>
+                        </div>
+
+                        <img src="https://www.bu.edu/shs/files/2017/06/behavioral-landing.jpg"
+                             alt=""></div>
+                </div>
+
+                <div class="content-container">
+
+
+                    <div class="content-wrapper">
+                        <div class="main">
+                            <article role="main" id="post-6759"
+                                     class="post-6759 page type-page status-publish hentry">
+                                <p>Joining a university community is all about adjustment&#8211;new
+                                    schedules, new academic
+                                    demands, new social pressures, new independence. There&#8217;s a
+                                    lot to juggle.</p>
+                                <p>Our Behavioral Medicine staff of psychiatrists, psychologists,
+                                    clinical nurse specialists,
+                                    licensed mental health clinicians, and clinical social workers
+                                    is well versed in the many
+                                    issues that can crop up over an academic career.</p>
+                            </article>
+
+
+                            <aside class="sidebar">
+                                <div id="bu_pages-4" class="widget widget_bu_pages widget-1">
+                                    <div id="contentnav">
+                                        <h3 class="widgetTitle">
+                                            <a class="content_nav_header"
+                                               href="https://www.bu.edu/shs/behavioral-medicine/">Quick
+                                                Links</a>
+                                        </h3>
+                                        <ul id="contentnavlist">
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/about-uhcs/contact-us/"
+                                                   target=""
+                                                   title="Contact Us" rel="noopener noreferrer">Contact
+                                                    Us</a></li>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/access-to-care/after-hours-care/"
+                                                   target=""
+                                                   title="After Hours Care"
+                                                   rel="noopener noreferrer">After Hours Care</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/counseling-services/emergencies/"
+                                                   target=""
+                                                   title="Emergencies" rel="noopener noreferrer">Emergencies</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://studentlife.northeastern.edu/open/meet/sexual-violence-resource-center/"
+                                                   target="_blank"
+                                                   title="OPEN’s Sexual Violence Resource Center"
+                                                   rel="noopener noreferrer">OPEN’s Sexual Violence
+                                                    Resource Center</a></li>
+                                            <li><a href="https://www.northeastern.edu/nushp/"
+                                                   target="_blank" title="NUSHP"
+                                                   rel="noopener noreferrer">NUSHP</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </aside>
+
+                        </div>
+
+                        <div class="promo-pair promo-wrapper">
+
+                            <div class="col-md-half promo-hours promo-solid ">
+                                <h2>Our Office</h2>
+
+                                <p class="hours">
+                                    <span class="label">Today's Hours:</span>
+                                    8:00 am - 5:00 pm </p>
+
+                                <p class="phone">
+                                    <span class="label">Call Us:</span>
+                                    <a href="tel:6173732772">617-373-2772</a> </p>
+
+                                <p class="address">
+                                    70 Forsyth St<br/>
+                                    Boston, MA 02215 </p>
+
+                                <a class="all-hours button"
+                                   href="https://www.bu.edu/shs/hours-offices/#behavioral-medicine">All
+                                    Hours</a>
+                            </div>
+
+
+                            <div class="col-md-half promo-bordered  ">
+
+                                <div>
+
+                                    <div class="col-md-12">
+                                        <h2>Services We Offer</h2>
+                                        <br>
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/find-at-northeastern/">Find@Northeastern</a>
+                                            </li>
+                                            <li>
+                                                <a href="WhatToExpext.html"
+                                                   target="_blank" rel="noopener noreferrer">What to
+                                                    expect</a></li>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/counseling-services/emergencies/"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Emergencies</a></li>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/counseling-services/accessing-emergency-support-and-urgent-care/">Mental
+                                                    Health Visits at UHCS</a></li>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/counseling-services/psychopharmacology-services/"
+                                                   target="_blank" rel="noopener noreferrer">Psychopharmacology
+                                                    Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.northeastern.edu/uhcs/counseling-services/group-counseling/"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Support Groups</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <br><br><br><br> <br><br><br><br>
+                        <br><br><br><br> <br><br><br><br>
+                        <br><br><br>
+
+                        <div class="col-md promo-gradient  ">
+                            <section id="featured-strip">
+                                <div class="wrap">
+                                    <img src="https://www.northeastern.edu/uhcs/wp-content/uploads/2019/10/logo-find.svg"
+                                         class="featured-logo" alt="">
+                                    <div class="featured-intro">
+                                        <h2>Find@Northeastern. <br/>Mental health support when you
+                                            need it anytime, anywhere.
+                                        </h2>
+                                        <p>You spoke and we listened. Introducing <strong>Find@Northeastern</strong>,
+                                            your 24/7
+                                            immediate access
+                                            connection to the mental health support and resources
+                                            you need to feel better on the
+                                            path ahead. With
+                                            just one call, wherever you are in our community, you’ll
+                                            reach someone to listen,
+                                            respond, and be there
+                                            to help.</p>
+                                    </div>
+
+                                    <div class="featured-text">
+                                        <h3>New options and people to smooth the way</h3>
+                                        <p><strong>Find@Northeastern</strong> offers</p>
+                                        <ul>
+                                            <li>Immediate support with a licensed mental health
+                                                provider
+                                            </li>
+                                            <li>Personal assistance in locating and scheduling the
+                                                help you need
+                                            </li>
+                                            <li>Five free counseling sessions each fall and spring
+                                                semester
+                                            </li>
+                                            <li>Telehealth options for wherever you are</li>
+                                            <li>Appointments with local therapists</li>
+                                            <li>Resources and tools to help you along the way</li>
+                                        </ul>
+                                        <p>All full-time degree seeking students are eligible for
+                                            <strong>Find@Northeastern</strong></p>
+                                        <a href="https://www.northeastern.edu/uhcs/find-at-northeastern/"
+                                           class="btn white"
+                                           target=""><span>Find@Northeastern</span></a>
+                                    </div>
+
+                                    <div class="featured-block">
+                                        <img src="https://www.northeastern.edu/uhcs/wp-content/uploads/2019/10/find-660x400.jpg"
+                                             alt="">
+                                        <div class="featured-description">
+                                            <h3 class="featured-block-title">We’re here to help</h3>
+                                            <h3><a href="tel:8772339477"
+                                            style="text-decoration: underline">877.233.9477</a> (in
+                                                the U.S.)<br/>
+                                                <a href="tel:+17814577777"
+                                                   style="text-decoration: underline">+1.781.457
+                                                    .7777</a>
+                                                (outside the
+                                                U.S.)</h3>
+                                            <h5>24/7 Mental Health Support</h5>
+                                            <p>There are moments when we can all feel anxious, sad,
+                                                or alone. <strong>Find@Northeastern</strong>
+                                                is
+                                                an important first step past those moments. It’s
+                                                your connection to people,
+                                                resources, and tools to
+                                                help you find your distinctive way.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section><!-- END featured-strip -->
+                        </div>
+                    </div>
+                </div><!-- .content-container -->
+
+
+            </div><!-- .content -->
+        </div><!-- .wrapper -->
+
+        <div id="nu__global-footer">
+            <!-- <div id="nu__utility-nav"><ul><li><a href="//giving.northeastern.edu" title="Make your gift" target="_blank">Make Your Gift</a></li><li><a href="//www.northeastern.edu/president/" title="President Aoun" target="_blank">President Aoun</a></li></ul></div> -->
+            <div class="nu__footer">
+                <div>
+                    <div class="campuses">
+
+                        <ul role="list">
+                            <li class="nearestcampus" role="listitem"><a
+                                    href="https://www.northeastern.edu/boston"
+                                    title="Boston campus [will open in new window]"
+                                    aria-label="Boston campus [will open in new window]"
+                                    target="_blank" rel="noopener noreferrer">Boston</a>
+                            </li>
+                            <li role="listitem"><a href="https://www.burlington.northeastern.edu/"
+                                                   title="Burlington campus [will open in new window]"
+                                                   aria-label="Burlington campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Burlington</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/charlotte/"
+                                                   title="Charlotte campus [will open in new window]"
+                                                   aria-label="Charlotte campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Charlotte</a></li>
+                            <li role="listitem"><a href="https://www.nchlondon.ac.uk/"
+                                                   title="London campus [will open in new window]"
+                                                   aria-label="London campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">London</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/csi/"
+                                                   title="Nahant campus [will open in new window]"
+                                                   aria-label="Nahant campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Nahant</a></li>
+                            <li role="listitem"><a href="https://roux.northeastern.edu/"
+                                                   title="Portland campus [will open in new window]"
+                                                   aria-label="Portland campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Portland</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/bayarea"
+                                                   title="San Francisco campus [will open in new window]"
+                                                   aria-label="San Francisco campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">San Francisco</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/seattle/"
+                                                   title="Seattle campus [will open in new window]"
+                                                   aria-label="Seattle campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Seattle</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/bayarea"
+                                                   title="Silicon Valley campus [will open in new window]"
+                                                   aria-label="Silicon Valley campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Silicon Valley</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/toronto/"
+                                                   title="Toronto campus [will open in new window]"
+                                                   aria-label="Toronto campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Toronto</a></li>
+                            <li role="listitem"><a href="https://www.northeastern.edu/vancouver"
+                                                   title="Vancouver campus [will open in new window]"
+                                                   aria-label="Vancouver campus [will open in new window]"
+                                                   target="_blank"
+                                                   rel="noopener noreferrer">Vancouver</a></li>
+                        </ul>
+
+                        <p>
+                            <a href="//www.google.com/maps/place/360+Huntington+Ave,+Boston,+MA+02115/@42.339348,-71.0903674,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37a185b1286ff:0x2c025c6d4b00cba2!8m2!3d42.339348!4d-71.0881734"
+                               title="View our Boston campus in Google Maps"
+                               aria-label="View our Boston campus in Google Maps"
+                               target="_blank">360 Huntington Ave., Boston, Massachusetts 02115</a>
+                            | <a href="tel:6173732000"
+                                 title="Give us a call"
+                                 aria-label="Give us a call">617.373.2000</a>
+                            | <a href="tel:6173733768" title="TTY" aria-label="TTY">TTY
+                            617.373.3768</a> | <a
+                                href="https://www.northeastern.edu/emergency-information"
+                                title="Emergency information"
+                                aria-label="Emergency information">Emergency Information</a><br/>&copy;
+                            2019 &nbsp;Northeastern
+                            University | <a href="https://my.northeastern.edu/"
+                                            title="Access MyNortheastern"
+                                            aria-label="Access MyNortheastern" target="_blank">MyNortheastern</a>
+                        </p>
+
+                    </div>
+
+                    <div class="connect">
+                        <ul role="list">
+                            <li role="listitem"><a href="//www.facebook.com/northeastern/"
+                                                   title="Friend us on Facebook"
+                                                   aria-label="Friend us on Facebook"
+                                                   target="_blank">
+                                <svg alt="facebook logo" aria-label="facebook logo"
+                                     viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="cls-1" cx="256" cy="256" r="256"/>
+                                    <path d="m301.6 151.2h36.3v-54.2h-51.4c-29.6 0-68.1 19-68.1 74.2v43h-49.1v56.1h49.1v146h58.6v-146h48.8l8.1-56.1h-56.9v-35.7c0-18.4 9-27.3 24.6-27.3z"/>
+                                </svg>
+                            </a></li>
+                            <li role="listitem"><a href="//twitter.com/Northeastern"
+                                                   title="Follow us on Twitter"
+                                                   aria-label="Follow us on Twitter"
+                                                   target="_blank">
+                                <svg alt="twitter logo" aria-label="twitter logo"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 510.57 510.57">
+                                    <path class="cls-1"
+                                          d="M255.29,1.43C114.3,1.43,0,115.75,0,256.73S114.3,512,255.29,512,510.57,397.72,510.57,256.73,396.28,1.43,255.29,1.43Zm128.6,203.82c.13,2.76.19,5.53.19,8.33,0,85-64.72,183-183,183a182.12,182.12,0,0,1-98.62-28.89,131.78,131.78,0,0,0,15.34.89,129.07,129.07,0,0,0,79.9-27.53,64.43,64.43,0,0,1-60.09-44.7,62.61,62.61,0,0,0,12.1,1.15,63.61,63.61,0,0,0,17-2.25A64.39,64.39,0,0,1,115,232.22c0-.28,0-.55,0-.83a64.25,64.25,0,0,0,29.15,8.06,64.42,64.42,0,0,1-19.92-85.91,182.61,182.61,0,0,0,132.62,67.21,64.38,64.38,0,0,1,109.62-58.68,128.49,128.49,0,0,0,40.86-15.61A64.52,64.52,0,0,1,379,182.05a128.53,128.53,0,0,0,37-10.13A130.11,130.11,0,0,1,383.89,205.25Z"
+                                          transform="translate(0 -1.43)"/>
+                                </svg>
+                            </a></li>
+                            <li role="listitem"><a href="//www.youtube.com/user/Northeastern"
+                                                   title="Check us out on YouTube"
+                                                   aria-label="Check us out on YouTube"
+                                                   target="_blank">
+                                <svg aria-label="youtube logo"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
+                                    <g>
+                                        <polygon class="cls-1"
+                                                 points="221.28 308.14 308.19 256 221.28 203.86 221.28 308.14"/>
+                                        <path class="cls-1"
+                                              d="M256,0C114.62,0,0,114.61,0,256S114.62,512,256,512,512,397.38,512,256,397.38,0,256,0ZM395,267.22a476.39,476.39,0,0,1-2.79,48s-2.72,20.44-11,29.42c-10.57,11.81-22.41,11.87-27.85,12.58-38.91,3-97.33,3.07-97.33,3.07s-72.29-.71-94.53-3c-6.19-1.23-20.06-.88-30.65-12.67-8.34-9-11-29.42-11-29.42a476.12,476.12,0,0,1-2.79-48v-22.5a475.73,475.73,0,0,1,2.79-48s2.72-20.45,11-29.46c10.57-11.82,22.41-11.89,27.85-12.56,38.9-3,97.27-3,97.27-3h.12s58.37,0,97.27,3c5.42.67,17.28.74,27.85,12.54,8.34,9,11,29.46,11,29.46a476.39,476.39,0,0,1,2.79,48Z"/>
+                                    </g>
+                                </svg>
+                            </a></li>
+                            <li role="listitem"><a
+                                    href="https://www.linkedin.com/school/northeastern-university/"
+                                    title="Connect with us on LinkedIn"
+                                    aria-label="Connect with us on LinkedIn"
+                                    target="_blank">
+                                <svg alt="linkedin logo" aria-label="linkedin logo"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 255 255">
+                                    <path class="cls-1"
+                                          d="M200.06,188.58V138.81c0-26.67-14.24-39.08-33.22-39.08-15.32,0-22.18,8.43-26,14.34v-12.3H112c.38,8.14,0,86.81,0,86.81h28.85V140.1a19.61,19.61,0,0,1,1-7c2.08-5.18,6.83-10.55,14.79-10.55,10.45,0,14.62,8,14.62,19.63v46.45h28.86ZM81.58,89.92c10.06,0,16.32-6.67,16.32-15-.18-8.51-6.26-15-16.13-15s-16.33,6.47-16.33,15c0,8.34,6.27,15,16,15ZM128.5,256A127.5,127.5,0,1,1,256,128.5,127.51,127.51,0,0,1,128.5,256ZM96,188.58V101.77H67.15v86.81Z"
+                                          transform="translate(-1 -1)"/>
+                                </svg>
+                            </a></li>
+                            <li role="listitem"><a href="https://www.instagram.com/northeastern/"
+                                                   title="See what we are up to on Instagram"
+                                                   aria-label="See what we are up to on Instagram"
+                                                   target="_blank">
+                                <svg alt="instagram logo" aria-label="instagram logo"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 55 55">
+                                    <g>
+                                        <path class="cls-1"
+                                              d="M27.28,18.51a9.18,9.18,0,1,0,9.32,9.18A9.31,9.31,0,0,0,27.28,18.51Zm0,15.12a5.94,5.94,0,1,1,5.94-5.94A5.94,5.94,0,0,1,27.28,33.63Z"/>
+                                        <path class="cls-1"
+                                              d="M36.87,16A2.16,2.16,0,1,0,39,18.11,2.13,2.13,0,0,0,36.87,16Z"/>
+                                        <path class="cls-1"
+                                              d="M27.5,0A27.5,27.5,0,1,0,55,27.5,27.5,27.5,0,0,0,27.5,0ZM42,35.25a6.94,6.94,0,0,1-2,5.27,7.38,7.38,0,0,1-5.26,1.89H20a7.62,7.62,0,0,1-5.26-1.89,7.44,7.44,0,0,1-2-5.4V20.27A7.42,7.42,0,0,1,14.59,15a7.42,7.42,0,0,1,5.27-1.89H34.71a7.24,7.24,0,0,1,5.4,2A7.62,7.62,0,0,1,42,20.4Z"/>
+                                    </g>
+                                </svg>
+                            </a></li>
+                            <li role="listitem"><a href="https://www.snapchat.com/add/NortheasternU"
+                                                   title="Engage with us on SnapChat"
+                                                   aria-label="Engage with us on SnapChat"
+                                                   target="_blank">
+                                <svg alt="snapchat logo" aria-label="snapchat logo"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 256.01 256">
+                                    <path class="cls-1"
+                                          d="M128.51,0a128,128,0,1,0,128,128A128,128,0,0,0,128.51,0ZM208.1,169.92c-.95,2.23-5.24,5.39-20.25,7.7-1.22.19-1.7,1.79-2.43,5.14-.27,1.22-.54,2.42-.91,3.68a2,2,0,0,1-2.14,1.6h-.19a18.77,18.77,0,0,1-3.36-.42,44.54,44.54,0,0,0-9-1,40.48,40.48,0,0,0-6.51.55c-4.5.75-8.32,3.45-12.37,6.31-5.88,4.16-12,8.45-21.41,8.45-.41,0-.82,0-1.22,0h0c-.26,0-.53,0-.8,0-9.46,0-15.53-4.29-21.4-8.44-4-2.86-7.88-5.57-12.38-6.32a40.48,40.48,0,0,0-6.51-.55,44.33,44.33,0,0,0-9,1,19.77,19.77,0,0,1-3.36.48,2.11,2.11,0,0,1-2.33-1.66c-.38-1.28-.65-2.51-.91-3.7-.67-3.07-1.14-5-2.43-5.16-15-2.32-19.3-5.48-20.25-7.72a2.59,2.59,0,0,1-.23-1,1.69,1.69,0,0,1,1.41-1.76c23.06-3.8,33.4-27.37,33.83-28.37a.3.3,0,0,1,0-.08c1.41-2.86,1.68-5.34.82-7.38-1.58-3.73-6.74-5.37-10.16-6.45-.84-.26-1.63-.51-2.25-.76-6.82-2.7-7.39-5.46-7.12-6.87.46-2.41,3.67-4.08,6.26-4.08a4.49,4.49,0,0,1,1.87.37,19.84,19.84,0,0,0,8.22,2.17c3.29,0,4.73-1.39,4.91-1.57-.09-1.56-.19-3.19-.3-4.87-.68-10.9-1.54-24.45,1.91-32.18,10.34-23.18,32.26-25,38.74-25l2.83,0h.39c6.48,0,28.45,1.8,38.8,25,3.45,7.74,2.6,21.3,1.91,32.19l0,.48c-.1,1.51-.19,3-.27,4.4a6.57,6.57,0,0,0,4.48,1.55h0a20.51,20.51,0,0,0,7.75-2.15,5.84,5.84,0,0,1,2.4-.47,7.39,7.39,0,0,1,2.77.53l0,0c2.31.82,3.83,2.44,3.86,4.14s-1.19,4-7.17,6.36c-.62.24-1.41.49-2.25.76-3.42,1.09-8.58,2.72-10.16,6.45-.86,2-.59,4.52.82,7.38a.3.3,0,0,1,0,.08c.43,1,10.76,24.57,33.83,28.37a1.7,1.7,0,0,1,1.42,1.76A2.77,2.77,0,0,1,208.1,169.92Z"
+                                          transform="translate(-0.51)"/>
+                                </svg>
+                            </a></li>
+                        </ul>
+                        <p><a href="https://www.northeastern.edu/privacy-information"
+                              title="Privacy information"
+                              aria-label="Privacy information" target="_blank">Privacy Policy</a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/themes/r-studenthealth/js/gf-quizzes.min.js?ver=1.0"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-content/themes/r-studenthealth/js/script.min.js?ver=1.0.3"></script>
+        <script type="text/javascript"
+                src="https://www.bu.edu/shs/wp-includes/js/wp-embed.min.js?ver=5.4.2"></script>
+        <script type="text/javascript">window.NREUM || (NREUM = {});
+        NREUM.info = {
+            "beacon": "bam-cell.nr-data.net",
+            "licenseKey": "b19c58809e",
+            "applicationID": "7212547",
+            "transactionName": "YV1SNkUDWEQDBRdQDFgXZRBeTV9ZBgMbFxNeSA==",
+            "queueTime": 0,
+            "applicationTime": 55,
+            "atts": "TRpRQA0ZS0o=",
+            "errorBeacon": "bam-cell.nr-data.net",
+            "agent": ""
+        }</script>
+    </body>
+</html>
